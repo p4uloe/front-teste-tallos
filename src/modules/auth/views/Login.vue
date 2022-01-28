@@ -2,7 +2,7 @@
   <div class="login">
     <div class="card">
       <div class="card-header">
-        <i class="fas fa-sign-in-alt"></i> Login
+        <i class="fas fa-sign-in-alt"></i> Fazer login
       </div>
 
       <div class="card-body">
@@ -18,7 +18,7 @@
           </div>
 
           <div class="form-group mt-3 mb-1">
-            <input id="button" type="submit" value="Login" class="btn btn-primary col-12">
+            <input id="button" type="submit" value="Entrar" class="btn btn-primary col-12">
           </div>
         </form>
       </div>
@@ -65,7 +65,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, cornflowerblue, lightblue);
+    background: linear-gradient(to right, #6fc9ec, rgb(150, 171, 241));
     font-size: 1.2rem;
   }
 

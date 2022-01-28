@@ -39,3 +39,8 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+ * {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+</style>

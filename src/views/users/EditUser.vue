@@ -63,7 +63,7 @@
               </div>
 
               <div class="form-group mt-3 mb-1">
-                <input type="submit" value="Atualizar" class="btn btn-success col-12" />
+                <input id="button" type="submit" value="Atualizar" class="btn btn-success col-12" />
               </div>
             </form>
           </div>
@@ -110,7 +110,7 @@ export default {
 
         await this.ActionEditUser(this.form)
 
-        window.alert('Editado com sucesso')
+        window.alert('Atualizado com sucesso!')
 
         this.$router.push({ name: 'users' })
       } catch (err) {
@@ -126,3 +126,16 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+ * {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  #button {
+    background: rgb(49, 49, 235);
+    border: none;
+    height: 50px;
+    width: 100px;
+    float: right;
+  }
+</style>

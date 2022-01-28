@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="container-fluid p-4">
-      <h2>Home</h2>
+      <h2>Página principal</h2>
       <hr>
 
       <h3>E aí, {{ user.name }}!</h3>
@@ -20,3 +20,8 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+ * {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+ </style>

@@ -13,10 +13,6 @@
         </li>
       </router-link>
 
-      <!-- <router-link :to="">
-        <li><i class="material-icons">settings</i>Configurações</li>
-      </router-link> -->
-
       <div @click="logout">
         <li>
           <i class="material-icons">logout</i> Sair
@@ -57,17 +53,21 @@ export default {
 
 <style lang="scss" scoped>
   * {
+    font-family: 'Source Sans Pro', sans-serif;
     padding-inline-start: 0px;
   }
-
   .menu {
     list-style: none;
     width: 100%;
     height: 100%;
     font-size: 16px;
     padding-top: 30px;
+    background: linear-gradient(to right, #6fc9ec, rgb(150, 171, 241));
   }
+  .navbar {
 
+    background: linear-gradient(to right, #6fc9ec, rgb(150, 171, 241));
+  }
   .menu li {
     height: 60px;
     transition: .4s;

@@ -8,8 +8,8 @@ Vue.use(VueResource)
 const http = Vue.http
 
 // http.options.root = 'https://guarded-headland-11685.herokuapp.com/'
-// http.options.root = 'http://localhost:3000/'
-http.options.root = 'https://backend-test-tallos.herokuapp.com/'
+http.options.root = 'http://localhost:3000/'
+// http.options.root = 'https://backend-test-tallos.herokuapp.com/'
 
 http.interceptors.push(interceptors)
 

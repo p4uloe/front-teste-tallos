@@ -1,23 +1,25 @@
 # frontend-test-tallos
-
-## Project setup
 ```
-npm install
+Este é um projeto para controle de funcionários usando VueJS, Vuex e Vuetify, solicitado pela empresa Tallos. O objetivo é em consumir uma API protegida pelo método de autenticação JWT e limitando as ações de cada usuário. (API: https://github.com/p4uloe/crud-teste)
 ```
-
-### Compiles and hot-reloads for development
+## Instalando as dependências e rodar o projeto
 ```
-npm run serve
+npm install && npm run serve
 ```
 
-### Compiles and minifies for production
+### Ultilizar o docker
 ```
-npm run build
+docker-compose up --build
 ```
 
-### Lints and fixes files
+### Observações do sistema
 ```
-npm run lint
+Observações sobre o sistema
+- O Administrador possui acesso a todas as funcionalidades
+- O Gerente possui acesso a todas as funcionalidades, exeto a de deletar outros funcionários
+- O Gerente não pode cadastrar um Administrador, nem editar o cargo de um funcionário para Administrador
+- O Usuário tem acesso somente a leitura dos dados
+- Obs.: O sistema esta um pouco lento, ainda não consegui solucionar, ao realizar o login, só aguardar.
 ```
 
 ### Customize configuration

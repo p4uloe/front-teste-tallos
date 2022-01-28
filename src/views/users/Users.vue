@@ -25,16 +25,16 @@
               <td class="text-center">{{ user_register.sector && firstUpperCase(user_register.sector) }}</td>
               <td class="text-center">{{ user_register.username }}</td>
               <td class="text-center" v-if="roleReader">
-                <button class="btn btn-sm btn-info p-1" v-if="roleReader">
+                <button class="btn btn-sm btn-info" v-if="roleReader">
                   <router-link
                     class="detalhes"
                     :to="{ name: 'show-user', params: { id: user_register._id } }"
                   >
-                    Detalhes
+                    Detalhar
                   </router-link>
                 </button>
 
-                <button class="btn btn-sm btn-warning p-1" style="margin-left: 5px" v-if="roleEditor">
+                <button class="btn btn-sm btn-success" style="margin-left: 5px" v-if="roleEditor">
                   <router-link
                     class="detalhes"
                     :to="{ name: 'edit-user', params: { id: user_register._id } }"
@@ -43,8 +43,8 @@
                   </router-link>
                 </button>
 
-                <button class="btn btn-sm btn-danger p-1" style="margin-left: 5px" v-if="roleAdmin" @click.prevent="deleteUser(user._id)">
-                  Remover
+                <button class="btn btn-sm btn-danger" style="margin-left: 5px" v-if="roleAdmin" @click.prevent="deleteUser(user._id)">
+                  Deletar
                 </button>
               </td>
             </tr>
@@ -107,6 +107,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+ * {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
   .detalhes {
     text-decoration: none;
     color: white;

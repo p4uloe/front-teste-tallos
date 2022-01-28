@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  node:
+    image: node:16
+    container_name: front-teste-tallos
+    ports:
+      - '8080:8080'
+    volumes:
+      - .:/front
+    working_dir: /front
+    command: 'npm run serve'

@@ -46,6 +46,7 @@ export const ActionLoadSession = ({ dispatch }) => {
 }
 
 export const ActionSetUser = ({ commit }, payload) => {
+  console.log(payload)
   commit(types.SET_USER, payload)
 }
 
